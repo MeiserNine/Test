@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;}
+	li{list-style:none;}
+	a{text-decoration:none;}
+	.nav{width:404px;height:30px;margin:30px auto;}
+	.nav li{float:left;border-right:1px solid #aaa;}
+	.nav li a{ display:block;width:100px;height:30px;background:#ccc; text-align:center;line-height:30px;color:#333;}
+	.nav ul{position:absolute;display:none;}
+	.nav ul li{float:none;}
+	.nav li:hover ul{display:block;}
+	
+	.box{width:1000px;height:300px;margin:0 auto;}
+	.box div{width:220px;height:220px;border:5px solid #cccacd;float:left;margin:0 10px;position:relative;}
+	.box div span{position:absolute;left:16px;bottom:16px;width:15px;height:15px;background:url(images/tu.gif) no-repeat;}
+	.box p{width:228px;height:228px;border:1px solid #29a4f4;background:#fff;line-height:36px; position:absolute;top:-5px;left:-5px; opacity:0;}
+	.box p img{margin:0 10px;}
+	.box div:hover p{ opacity:1; background:rgba(255,255,255,0.6);}
+	.box div:hover span{background:url(images/tu2.gif);z-index:1;}
+</style>
+</head>
+
+<body>
+<ul class="nav">
+	<li><a href="#">一级导航</a></li>
+    <li><a href="#">一级导航</a>
+    	<ul>
+        	<li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+        </ul>
+    </li>
+    <li><a href="#">一级导航</a>
+    	<ul>
+        	<li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+            <li><a href="#">二级导航</a></li>
+        </ul>
+    </li>
+    <li><a href="#">一级导航</a></li>
+</ul>
+
+
+<div class="box">
+	<div>
+    	<img src="images/img01.jpg">
+        <span></span>
+        <p>
+        	<img src="images/logo.gif">晚上吃什么？？驴肉火烧，羊汤，牛肉包，紫菜包饭，东坡肘子
+        </p>
+    </div>
+    <div>
+    	<img src="images/img01.jpg">
+        <span></span>
+        <p>
+        	<img src="images/logo.gif">晚上吃什么？？驴肉火烧，羊汤，牛肉包，紫菜包饭，东坡肘子
+        </p>
+    </div>
+    <div>
+    	<img src="images/img01.jpg">
+        <span></span>
+        <p>
+        	<img src="images/logo.gif">晚上吃什么？？驴肉火烧，羊汤，牛肉包，紫菜包饭，东坡肘子
+        </p>
+    </div>
+</div>
+</body>
+</html>
